@@ -1,0 +1,33 @@
+<html>
+<head><title>Page1</title></head>
+<body>
+	<h4>Page for Selenium Testing</h4>
+
+	<!--<form action="http://192.168.138.13:9002/soap/getclientlist" method="get">-->
+	<form action="python_submit_page.html" method="get">
+		<p>
+			Username: <input class="username" id="idUsername" type="text" name="username" />
+		</p>
+		<p>
+			Password: <input class="password" id="idPassword" type="password" name="password" />
+		</p>
+		<select id="idCountryList" name="CountryList" class="select country list">
+		    <option value="india">India</option>
+		    <option value="australia">Australia</option>
+		    <option value="srilanka">Sri Lanka</option>
+		    <option value="england" selected>England</option>
+		</select>
+		<p>
+			<input data-modal="savings" type="checkbox" value="savings">Savings</input>
+			<input id="currentCb" type="checkbox" value="current">Current</input>
+		</p>
+		<p>
+			<input type="radio" name="gender" value="male">Male</input>
+			<input type="radio" name="gender" value="female">Female</input>
+		</p>
+		<a id="link" href="python_submit_page.html" onclick="window.open('python_submit_page.html','newwindow','width=1280,height=900'); return false;">view submit page</a>
+		<p><input type='submit' value='Submit'></p>
+	</form>
+
+</body>
+</html>
